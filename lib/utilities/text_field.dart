@@ -6,6 +6,8 @@ TextFormField getTextField({
   TextEditingController? textEditingController,
   Widget? prefixIcon,
   double? borderRadius,
+  Widget? suffixIcon,
+  double? size = 52,
 }) {
   return TextFormField(
     controller: textEditingController,
@@ -16,7 +18,11 @@ TextFormField getTextField({
           borderRadius: BorderRadius.circular(
               (borderRadius == null) ? MySize.size15! : borderRadius),
         ),
+        contentPadding: EdgeInsets.only(
+          bottom: size! / 2, // HERE THE IMPORTANT PART
+        ),
         prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
         hintText: hintText),
   );
 }

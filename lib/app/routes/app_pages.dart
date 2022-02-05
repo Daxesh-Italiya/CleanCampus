@@ -2,8 +2,12 @@ import 'package:get/get.dart';
 
 import 'package:clean_campus/app/modules/home/bindings/home_binding.dart';
 import 'package:clean_campus/app/modules/home/views/home_view.dart';
+import 'package:clean_campus/app/modules/home_screen/bindings/home_screen_binding.dart';
+import 'package:clean_campus/app/modules/home_screen/views/home_screen_view.dart';
 import 'package:clean_campus/app/modules/login_screen/bindings/login_screen_binding.dart';
 import 'package:clean_campus/app/modules/login_screen/views/login_screen_view.dart';
+import 'package:clean_campus/app/modules/sign_up_screen/bindings/sign_up_screen_binding.dart';
+import 'package:clean_campus/app/modules/sign_up_screen/views/sign_up_screen_view.dart';
 import 'package:clean_campus/app/modules/splash_screen/bindings/splash_screen_binding.dart';
 import 'package:clean_campus/app/modules/splash_screen/views/splash_screen_view.dart';
 
@@ -29,6 +33,16 @@ class AppPages {
       name: _Paths.LOGIN_SCREEN,
       page: () => LoginScreenView(),
       binding: LoginScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.SIGN_UP_SCREEN,
+      page: () => SignUpScreenView(),
+      binding: SignUpScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOME_SCREEN,
+      page: () => HomeScreenView(),
+      binding: HomeScreenBinding(),
     ),
   ];
 }
