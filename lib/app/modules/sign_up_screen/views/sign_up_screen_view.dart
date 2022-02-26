@@ -88,8 +88,7 @@ class SignUpScreenView extends GetWidget<SignUpScreenController> {
                         ),
                       ),
                       size: MySize.size52,
-                      textEditingController:
-                          controller.mobileNoController.value),
+                      textEditingController: controller.emailController.value),
                 ),
                 SizedBox(
                   height: MySize.size16,

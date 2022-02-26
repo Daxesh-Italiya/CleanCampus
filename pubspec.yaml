@@ -9,6 +9,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: 4.6.1
   flutter_svg:
+  carousel_slider:
+  pinput:
   flutter: 
     sdk: flutter
 

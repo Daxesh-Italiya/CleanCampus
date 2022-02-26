@@ -96,12 +96,17 @@ class LoginScreenView extends GetWidget<LoginScreenController> {
                       padding: EdgeInsets.only(
                         right: MySize.getScaledSizeWidth(13),
                       ),
-                      child: Text(
-                        "Forgot Password?",
-                        textAlign: TextAlign.right,
-                        style: TextStyle(
-                            fontSize: MySize.size14,
-                            color: Colors.blue.withOpacity(0.5)),
+                      child: InkWell(
+                        onTap: () {
+                          Get.toNamed(Routes.OTP_SCREEN);
+                        },
+                        child: Text(
+                          "Forgot Password?",
+                          textAlign: TextAlign.right,
+                          style: TextStyle(
+                              fontSize: MySize.size14,
+                              color: Colors.blue.withOpacity(0.5)),
+                        ),
                       ),
                     ),
                   ],
